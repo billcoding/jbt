@@ -1,2 +1,2 @@
 # jbt
-JBTool
+jbt is a toolset
