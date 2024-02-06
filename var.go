@@ -112,10 +112,10 @@ func appKeyDirs(name string) []string {
 
 func getVmOptionsContent() string {
 	jar := filepath.Join(jetbrainsDir(), "active-agt.jar")
-	return fmt.Sprintf(`-javaagent:` + jar + `
+	return `-javaagent:` + jar + `
 --add-opens=java.base/jdk.internal.org.objectweb.asm=ALL-UNNAMED
 --add-opens=java.base/jdk.internal.org.objectweb.asm.tree=ALL-UNNAMED
-`)
+`
 }
 
 func getAppName(name string) string { return appMap[name] }
